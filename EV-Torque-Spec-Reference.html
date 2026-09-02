@@ -610,7 +610,7 @@ function updateHeroAndStats(idx){
 
   if(activeModel === 'all'){
     heroTitle.innerHTML = `ค่าแรงขันน็อตมาตรฐาน — รถยนต์ไฟฟ้าทุกรุ่น<span class="en">STANDARD TIGHTENING TORQUE SPECIFICATIONS</span>`;
-    heroDesc.textContent = 'รวบรวมและจัดหมวดหมู่ค่าแรงขัน (Tightening Torque) ของจุดยึดน็อต/สกรูทุกจุดที่ระบุไว้ในคู่มือซ่อมทางการของแต่ละรุ่น เพื่อใช้เป็นข้อมูลอ้างอิงหน้างานซ่อมบำรุงที่ P&K New Energy Service Center — เลือกรุ่นรถจากแท็บด้านบน แล้วค้นหาด้วยชื่อชิ้นส่วนหรือขนาดน็อตได้จากช่องค้นหา';
+    heroDesc.textContent = 'รวบรวมและจัดหมวดหมู่ค่าแรงขัน (Tightening Torque) ของจุดยึดน็อต/สกรูทุกจุดที่ระบุไว้ในคู่มือซ่อมทางการของแต่ละรุ่น เพื่อใช้เป็นข้อมูลอ้างอิงหน้างานซ่อมบำรุง — เลือกรุ่นรถจากแท็บด้านบน แล้วค้นหาด้วยชื่อชิ้นส่วนหรือขนาดน็อตได้จากช่องค้นหา';
     statSub.textContent = 'แสดงข้อมูลของทุกรุ่นรวมกัน — กดแท็บด้านบนเพื่อดูเฉพาะรุ่น';
     heroTags.innerHTML = `
       <span class="tag">${modelKeys.length} รุ่นรถ</span>
@@ -620,7 +620,7 @@ function updateHeroAndStats(idx){
   } else {
     const label = MODEL_LABELS[activeModel];
     heroTitle.innerHTML = `ค่าแรงขันน็อตมาตรฐาน — ${label}<span class="en">STANDARD TIGHTENING TORQUE SPECIFICATIONS</span>`;
-    heroDesc.textContent = `รวบรวมและจัดหมวดหมู่ค่าแรงขัน (Tightening Torque) ของจุดยึดน็อต/สกรูทุกจุดที่ระบุไว้ในคู่มือซ่อม ${label} ฉบับทางการ เพื่อใช้เป็นข้อมูลอ้างอิงหน้างานซ่อมบำรุงที่ P&K New Energy Service Center`;
+    heroDesc.textContent = `รวบรวมและจัดหมวดหมู่ค่าแรงขัน (Tightening Torque) ของจุดยึดน็อต/สกรูทุกจุดที่ระบุไว้ในคู่มือซ่อม ${label} ฉบับทางการ เพื่อใช้เป็นข้อมูลอ้างอิงหน้างานซ่อมบำรุง`;
     statSub.textContent = `สรุปจากตาราง Torque Specifications ในคู่มือซ่อม ${label} ฉบับทางการ`;
     heroTags.innerHTML = `
       <span class="tag">${label}</span>
